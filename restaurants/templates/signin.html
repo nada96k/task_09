@@ -4,10 +4,10 @@
 	Signin
 {% endblock title %}
 
-{% block body %}
+{% block content %}
 	<form action="{% url 'signin' %}" method="POST">
 		{% csrf_token %}
 		{{form|crispy}}
 		<input type="submit" value="Signin">
 	</form>
-{% endblock body %}
+{% endblock content %}
